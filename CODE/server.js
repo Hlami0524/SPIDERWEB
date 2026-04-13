@@ -73,7 +73,7 @@ app.get("/api/sports", async (req, res) => {
   }
 });
 const categories = ["general", "world", "business", "technology", "entertainment", "sports", "science", "health"];
-const newsCache = {};
+const news Cache = {};
 const NEWS_CACHE_DURATION = 10 * 60 * 1000;
 
 categories.forEach(cat => {
