@@ -6,7 +6,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
-let newsCache = null;
+let news Cache = null;
 let lastFetchTime = 0;
 const CACHE_DURATION = 1000 * 60 * 10;
 
@@ -73,7 +73,7 @@ app.get("/api/sports", async (req, res) => {
   }
 });
 const categories = ["general", "world", "business", "technology", "entertainment", "sports", "science", "health"];
-const news Cache = {};
+const newsCache = {};
 const NEWS_CACHE_DURATION = 10 * 60 * 1000;
 
 categories.forEach(cat => {
